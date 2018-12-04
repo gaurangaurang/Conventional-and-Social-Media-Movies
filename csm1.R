@@ -1,3 +1,4 @@
+#The aim is to fit a multiple regression model to predict the gross of a movie.
 library(dplyr)
 library(corrplot)
 
@@ -27,3 +28,5 @@ fit <- lm(Gross~.,data = data_model)
 summary(fit)
 
 plot(fit)
+
+#The model has an R squared of 66.01%. I would like to further explore ways to increase it.
