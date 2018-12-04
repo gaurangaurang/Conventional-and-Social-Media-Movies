@@ -23,7 +23,7 @@ dataset$Year = as.factor(dataset$Year)
 data_model <- select(dataset, 2,3,4,5,6,7,8,9,10,14)
 str(data_model)
 
-#Build model with gorss as the target variable.
+#Build model with gorss as the target variable using year, ratings, genre, budget, screens, sequel, sentiment, views and aggregate followers as predictors.
 fit <- lm(Gross~.,data = data_model)
 summary(fit)
 
